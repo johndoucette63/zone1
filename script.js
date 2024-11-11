@@ -1,13 +1,10 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
     const responseText = document.getElementById('responseText');
+    responseText.textContent = 'This is Dynamic Text';
     responseText.classList.add('hidden');
 
-    document.getElementById('pressMeButton').addEventListener('click', function() {
+    setTimeout(() => {
         responseText.classList.remove('hidden');
-        
-        setTimeout(() => {
-            responseText.classList.add('hidden');
-        }, 3000);
-    });
+    }, 5000);
 });
