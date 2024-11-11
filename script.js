@@ -1,10 +1,8 @@
 // script.js
-document.addEventListener('DOMContentLoaded', function() {
-    const responseText = document.getElementById('responseText');
-    responseText.textContent = 'This is Dynamic Text';
-    responseText.classList.add('hidden');
-
-    setTimeout(() => {
-        responseText.classList.remove('hidden');
-    }, 5000);
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        const message = document.createElement("div");
+        message.textContent = "Dynamic Load";
+        document.body.appendChild(message);
+    }, 3000);
 });
