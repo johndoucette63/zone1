@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+<script id="delphi-page-script">
+  window.delphi = {...(window.delphi ?? {}) };
+  window.delphi.page = {
+    config: "12256b21-bb2c-47af-bfab-a65365cc51b4",
+    overrides: {
+      landingPage: "OVERVIEW",
+    },
+    container: {
+      width: "100%",
+      height: "800px",
+    },
+  };
+</script>
 
-<script id="delphi-bubble-script">
-    window.delphi = {...(window.delphi ?? {}) };
-    window.delphi.bubble = {
-      config: "12256b21-bb2c-47af-bfab-a65365cc51b4",
-      overrides: {
-        landingPage: "CHAT",
-      },
-      trigger: {
-        color: "#FF6A27",
-      },
-    };
-  </script>
-  
-  <script id="delphi-bubble-bootstrap" src="https://embed.delphi.ai/loader.js"></script>
+<script id="delphi-page-bootstrap" src="https://embed.delphi.ai/loader.js"></script>
+
   
 <body>
-    <div class="container">
-        <h1>See the chat bot in the lower right corner</h1>    
-    </div>
-    <script src="script.js"></script>
+  <div class="container">
+      <!-- Delphi container -->
+      <div id="delphi-container" style="width: 50%; height: 800px;"></div>
+  </div>
 </body>
 </html>
