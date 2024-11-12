@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script id="delphi-page-script">
+  window.delphi = {...(window.delphi ?? {}) };
+  window.delphi.page = {
+    config: "12256b21-bb2c-47af-bfab-a65365cc51b4",
+    overrides: {
+      landingPage: "OVERVIEW",
+    },
+    container: {
+      width: "100%",
+      height: "800px",
+    },
+  };
+</script>
+
+<script id="delphi-page-bootstrap" src="https://embed.delphi.ai/loader.js"></script>
+
+  
+<body>
+  <div class="container">
+      <!-- Delphi container -->
+      <div id="delphi-container" style="width: 50%; height: 800px;"></div>
+  </div>
+</body>
+</html>
